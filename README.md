@@ -14,7 +14,7 @@ $parameters = @{
     User = 'jane@contoso.com' # Set the login username you wish to use in UPN format
     Password = 'g6sBG?69H)TC(C.4'  # Set the login password you wish to use, and don't use weak passwords ;)
     SPN = 'MSSQLSvc/azslqsrv.80c60e3f113a0.database.windows.net:1433'  # Set the SPN of Azure resource you want to get kerberos ticket for
-    TenantId = ''  # Set the Tenat Id of the Azure AD tenant Azure resource belongs to
+    TenantID = '6bfc1ce4-0fdc-4c82-adf4-59bd9c0285d1'  # Set the Tenat Id of the Azure AD tenant Azure resource belongs to
 
     ## Optional parameters (default values will be used if omitted)
     Authority = 'https://login.microsoftonline.com/'  # Set Azure AD Authority url for the Azure Environment. Use Get-AzEnvironment to learn values for different environments
