@@ -41,7 +41,7 @@ function RegisterPackageManager(){
     $packageSources = Get-PackageSource
     if(@($packageSources).Where{$_.location -eq $_nugetUrl}.count -eq 0)
     {
-        Register-PackageSource -Name AzureADKerberosCheckerNuGet -Location $_nugetUrl -ProviderName NuGet | Out-Null
+        Register-PackageSource -Name AzureADKerberosCheckerNuGet -Location $_nugetUrl -ProviderName NuGet -Force | Out-Null
     }
 }
 
