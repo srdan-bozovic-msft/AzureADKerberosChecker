@@ -22,7 +22,7 @@ $parameters = @{
 
 $scriptUrlBase = 'https://raw.githubusercontent.com/srdan-bozovic-msft/AzureADKerberosChecker/master'
 
-Invoke-Command -ScriptBlock ([Scriptblock]::Create((iwr ($scriptUrlBase+'/getKerberosTicket.ps1?t='+ [DateTime]::Now.Ticks) -UseBasicParsing)).Content)) -ArgumentList $parameters
+Invoke-Command -ScriptBlock ([Scriptblock]::Create((iwr ($scriptUrlBase+'/getKerberosTicket.ps1?t='+ [DateTime]::Now.Ticks) -UseBasicParsing).Content)) -ArgumentList $parameters
 ```
 4. Set the parameters on the script. 
 
