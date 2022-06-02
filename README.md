@@ -10,6 +10,8 @@ This PowerShell script will run some connectivity checks from this machine to th
 3. Paste the following in the script window:
 
 ```powershell
+[System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+
 $parameters = @{
     User = 'jane@contoso.com' # Set the login username you wish to use in UPN format
     Password = 'g6sBG?69H)TC(C.4'  # Set the login password you wish to use, and don't use weak passwords ;)
